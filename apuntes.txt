@@ -1,0 +1,53 @@
+#SISTEMA DE NAVEGACION
+
+Estos son los stack de navegacion el cual trea en react navigation 
+integrado en su core.
+
+1 Stack Navegation
+
+hagamos de cuenta de que es una baraja de cartas
+las cuales mediante vamos navegando por los screens de nuestras app, se van montando una encima de la otra.
+
+ahora, tenemos varios metodos los cuales nos permiten regresar en cada screen:
+# goBack() = regresa a la pantalla anterior
+## pop() = regresa a la pantalla anterior pero la elimina del stack
+### popToTop() = regresa a la pantalla de inicio de la app
+
+#Requisitos para usar React Navigation
+1 Leer el getting started de react navigation 
+2 elegir el stack de navegacion el cual vamos a implementar
+
+##Estilizando el stack navigator
+
+Estos son los valores mediante el cual definimos valores en el header del stack
+el initialRouteName es el nombre de la pantalla en la cual iniciara nuestra app
+
+initialRouteName="PageOne"
+screenOptions={{
+  headerStyle: {
+    backgroundColor: '#191c32',
+  },
+  headerTintColor: '#fff',
+  headerTitleStyle: {
+    fontWeight: 'bold',
+    },
+  contentStyle: {
+    backgroundColor: '#fff',
+  },
+  headerBackTitle: 'Back',
+}}
+
+#Enviar argumentos entre pantallas
+
+2 Drawer Navegation
+
+este tipo de navegacion no es mas que un sidebar
+lateral el cual no permite mostrar informacion sobre el 
+usuario que esta logueado, navegar hacia otras vistas. 
+
+
+
+
+
+3 BottomTam Navegation
+4 MaterialTop Navigation
